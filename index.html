@@ -6,43 +6,139 @@
 <meta name="description" content="Andreas Haapalainen — mathematics and computer science undergraduate at the University of Chicago.">
 <meta name="color-scheme" content="light dark">
 <title>Andreas Haapalainen — Personal website</title>
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231f514b'/%3E%3Ctext x='32' y='41' font-size='29' fill='white' text-anchor='middle' font-family='Georgia'%3EAH%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23262949'/%3E%3Ctext x='32' y='41' font-size='29' fill='white' text-anchor='middle' font-family='monospace'%3EAH%3C/text%3E%3C/svg%3E">
+<script>try { const t = localStorage.getItem("andreas-site-theme-v2"); if (t === "light" || t === "dark") document.documentElement.dataset.theme = t; } catch (e) {}</script>
 <style>
-:root{color-scheme:light;--bg:#f8f8f4;--surface:#fff;--ink:#202a29;--muted:#586763;--accent:#235c54;--line:#dce3dc;--soft:#e9f0ea;--shadow:0 12px 35px #253f3210}
-:root[data-theme=dark]{color-scheme:dark;--bg:#131b1b;--surface:#1a2424;--ink:#edf3ee;--muted:#b0c0b8;--accent:#a0d4ba;--line:#354744;--soft:#233731;--shadow:0 12px 35px #0002}
-@media(prefers-color-scheme:dark){:root:not([data-theme]){color-scheme:dark;--bg:#131b1b;--surface:#1a2424;--ink:#edf3ee;--muted:#b0c0b8;--accent:#a0d4ba;--line:#354744;--soft:#233731;--shadow:0 12px 35px #0002}}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}a{color:var(--accent);text-underline-offset:4px}button{font:inherit}a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:5px}::selection{background:var(--soft);color:var(--ink)}.wrap{max-width:1050px;margin:auto;padding:0 34px}.nav{display:flex;align-items:center;justify-content:space-between;gap:22px;padding:25px 0;border-bottom:1px solid var(--line)}.brand{display:flex;align-items:center;gap:11px;font-weight:700;text-decoration:none;color:var(--ink);white-space:nowrap}.brandmark{height:34px;width:34px;display:grid;place-items:center;border:1px solid var(--line);border-radius:9px;color:var(--accent);font-family:Georgia,serif;font-size:16px}.navlinks{display:flex;align-items:center;gap:24px;flex-wrap:wrap}.navlinks a{font-size:14px;color:var(--muted);text-decoration:none}.navlinks a:hover{color:var(--accent)}.theme{border:1px solid var(--line);color:var(--ink);background:var(--surface);height:36px;width:36px;border-radius:50%;display:grid;place-items:center;cursor:pointer}.theme svg{width:17px;height:17px}.hero{display:grid;grid-template-columns:minmax(0,1fr) 235px;gap:60px;align-items:center;padding:90px 0 78px}.eyebrow,.section-kicker{font-size:11px;letter-spacing:.19em;font-weight:750;text-transform:uppercase;color:var(--accent)}h1,h2{font-family:Georgia,"Times New Roman",serif;font-weight:400;letter-spacing:-.045em;line-height:1.07;margin:0}h1{font-size:clamp(58px,8vw,88px);margin:14px 0 19px}h2{font-size:clamp(33px,5vw,46px)}p{margin:0 0 16px}.lead{font-size:21px;line-height:1.5;max-width:620px;color:var(--muted)}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:27px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:1px solid var(--accent);border-radius:7px;font-size:14px;padding:11px 19px;text-decoration:none;font-weight:650;background:var(--accent);color:var(--bg);transition:transform .15s}.btn:hover{transform:translateY(-2px)}.btn.secondary{background:transparent;color:var(--accent);border-color:var(--line)}.portrait{position:relative;aspect-ratio:1/1.08;display:grid;place-items:center;overflow:hidden;border:1px solid var(--line);border-radius:15px;background:var(--soft)}.portrait:before,.portrait:after{content:"";position:absolute;width:270px;height:270px;border:1px solid var(--accent);opacity:.16;transform:rotate(35deg);border-radius:38%}.portrait:after{width:210px;height:210px;transform:rotate(-30deg)}.monogram{font:76px/1 Georgia,serif;letter-spacing:-.09em;color:var(--accent);z-index:1;padding-right:7px}.portrait small{position:absolute;bottom:15px;font-size:10px;letter-spacing:.18em;color:var(--muted);text-transform:uppercase}.section{border-top:1px solid var(--line);padding:48px 0 53px;scroll-margin-top:20px}.section-heading{display:grid;grid-template-columns:200px minmax(0,1fr);gap:25px;align-items:baseline;margin-bottom:25px}.section-heading h2{margin-top:8px}.section-body{margin-left:225px}.about-copy{max-width:650px;color:var(--muted);font-size:17px}.tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:23px}.tag{border:1px solid var(--line);background:var(--surface);padding:4px 11px;border-radius:100px;font-size:12px;color:var(--muted)}.project-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}.project{border:1px solid var(--line);border-radius:12px;padding:24px;background:var(--surface);box-shadow:var(--shadow)}.project-top{display:flex;align-items:center;justify-content:space-between;color:var(--accent);margin-bottom:28px}.project-icon{width:40px;height:40px;border-radius:9px;background:var(--soft);display:grid;place-items:center}.project-icon svg{width:23px;height:23px}.number{font-size:12px;letter-spacing:.12em;color:var(--muted)}h3{font-size:19px;line-height:1.35;margin:0 0 9px;letter-spacing:-.025em}.project p,.entry p{font-size:14px;color:var(--muted);margin-bottom:0}.project .tag{display:inline-block;margin-top:19px}.entry{display:grid;grid-template-columns:1fr auto;gap:8px 20px;padding:20px 0;border-bottom:1px solid var(--line)}.entry:first-child{padding-top:0}.entry:last-child{border-bottom:0;padding-bottom:0}.entry h3{margin:0}.entry .date{font-size:13px;color:var(--muted)}.entry p{grid-column:1/-1}.contact-copy{max-width:550px;color:var(--muted);font-size:17px}.contact-note{font-size:13px;color:var(--muted);border-left:2px solid var(--line);padding-left:12px}.footer{border-top:1px solid var(--line);padding:24px 0 35px;display:flex;justify-content:space-between;gap:16px;color:var(--muted);font-size:13px}.skip{position:absolute;left:15px;top:-100px;background:var(--surface);padding:10px;z-index:3}.skip:focus{top:10px}
-@media(max-width:760px){.wrap{padding:0 23px}.hero{grid-template-columns:1fr 145px;gap:25px;padding:58px 0 50px}.monogram{font-size:49px}.section-heading{grid-template-columns:1fr;gap:0}.section-body{margin-left:0}.section{padding:37px 0}.navlinks{gap:14px}.navlinks a{font-size:13px}.lead{font-size:18px}}
-@media(max-width:500px){.nav{align-items:flex-start;flex-wrap:wrap;gap:12px;padding:18px 0}.navlinks{width:100%;justify-content:space-between;gap:8px}.hero{grid-template-columns:1fr;padding:44px 0 38px;gap:22px}.portrait{grid-row:1;width:95px;border-radius:11px;aspect-ratio:1}.monogram{font-size:35px}.portrait small{display:none}.project-grid{grid-template-columns:1fr}.footer{flex-wrap:wrap}.entry{grid-template-columns:1fr}.entry p{grid-column:1}.entry .date{grid-row:2}h1{font-size:58px}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
 
-/* Academic homepage refinements */
-h1{font-size:clamp(45px,7.1vw,78px);overflow-wrap:anywhere}.hero{gap:42px}.entry .organization{grid-column:1/-1;font-size:15px;color:var(--accent);margin:-4px 0 0}.entry .details{grid-column:1/-1;color:var(--muted);font-size:14px;margin:2px 0 0;padding-left:19px}.details li+li{margin-top:5px}.interest-list{display:grid;gap:0}.interest-list article{padding:20px 0;border-bottom:1px solid var(--line)}.interest-list article:first-child{padding-top:0}.interest-list article:last-child{border:0;padding-bottom:0}.interest-list p{font-size:15px;color:var(--muted);margin:0}.interest-list h3{margin-bottom:5px}.coursework{margin-top:22px}.coursework h3{font-size:15px}.coursework p{font-size:14px;color:var(--muted)}.contact-links{display:flex;flex-wrap:wrap;gap:12px 24px;align-items:center}.contact-links a{overflow-wrap:anywhere}.subtle{font-size:13px;color:var(--muted)}
-@media(max-width:760px){.hero{gap:25px}.navlinks{gap:12px}}
-@media(max-width:500px){h1{font-size:clamp(38px,11vw,56px)}.navlinks{justify-content:flex-start;gap:8px 15px}.hero{gap:22px}.entry .date{grid-row:auto}.entry .organization{margin:0}}
+/* Theme tokens — edit these to customize the palette. */
+:root {
+  color-scheme: dark;
+  --bg: #10121f;
+  --surface: #15182a;
+  --ink: #f1f0fa;
+  --muted: #b5b9cf;
+  --accent: #b6a6ff;
+  --blue: #91b5f6;
+  --line: #30344a;
+  --grid: #7d89c710;
+  --glow: #5552ae18;
+  --edge: #6f77a6;
+  --mono: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace;
+}
+:root[data-theme="light"] {
+  color-scheme: light;
+  --bg: #f5f6fc;
+  --surface: #edeef8;
+  --ink: #20243b;
+  --muted: #50566f;
+  --accent: #5946a7;
+  --blue: #365eaa;
+  --line: #d6d9e8;
+  --grid: #6874b610;
+  --glow: #6d60b813;
+  --edge: #8189b1;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: radial-gradient(ellipse 720px 440px at 83% 0%, var(--glow), transparent 100%), var(--bg);
+  color: var(--ink);
+  font: 16px/1.75 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: var(--accent); text-underline-offset: 5px; }
+a, button { transition: color .15s, background .15s, border-color .15s; }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--blue); outline-offset: 5px; }
+::selection { color: var(--ink); background: var(--line); }
+.wrap { max-width: 1080px; margin: auto; padding: 0 36px; }
+.nav { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 25px 0; border-bottom: 1px solid var(--line); }
+.brand { display: inline-flex; gap: 11px; align-items: center; text-decoration: none; color: var(--ink); font-size: 14px; font-weight: 600; white-space: nowrap; }
+.brandmark { font: 600 12px/1 var(--mono); color: var(--accent); width: 31px; height: 31px; border: 1px solid var(--line); display: grid; place-items: center; border-radius: 5px; }
+.navlinks { display: flex; align-items: center; gap: 23px; flex-wrap: wrap; }
+.navlinks a { font: 12px/1.5 var(--mono); color: var(--muted); text-decoration: none; }
+.navlinks a:hover, .brand:hover { color: var(--accent); }
+.theme { display: grid; place-items: center; width: 34px; height: 34px; border: 1px solid var(--line); border-radius: 5px; background: transparent; color: var(--muted); cursor: pointer; }
+.theme:hover { color: var(--accent); background: var(--surface); }
+.theme svg { width: 17px; height: 17px; }
+.hero { display: grid; grid-template-columns: minmax(0, 1fr) 265px; align-items: center; gap: 48px; padding: 88px 0 82px; }
+.eyebrow { color: var(--blue); font: 11px/1.7 var(--mono); letter-spacing: .055em; }
+h1 { font-size: clamp(40px, 5.2vw, 65px); font-weight: 650; line-height: 1.07; letter-spacing: -.062em; margin: 18px 0 22px; overflow-wrap: anywhere; }
+p { margin: 0 0 17px; }
+.lead { font-size: 19px; line-height: 1.65; color: var(--muted); max-width: 625px; }
+.actions { display: flex; align-items: center; flex-wrap: wrap; gap: 13px 23px; margin-top: 26px; }
+.actions a { font: 13px/1.5 var(--mono); text-decoration: none; }
+.actions a:hover { color: var(--ink); text-decoration: underline; }
+.actions .btn { display: inline-flex; align-items: center; gap: 12px; border: 1px solid var(--accent); background: transparent; border-radius: 5px; padding: 10px 14px; color: var(--accent); }
+.actions .btn:hover { background: var(--surface); text-decoration: none; }
+.section { border-top: 1px solid var(--line); padding: 36px 0 40px; display: grid; grid-template-columns: 222px minmax(0, 1fr); gap: 30px; scroll-margin-top: 20px; }
+.section-heading { display: flex; align-items: baseline; gap: 12px; }
+.section-heading::before { color: var(--blue); font: 11px/1.5 var(--mono); }
+#about .section-heading::before { content: "01 /"; }
+#background .section-heading::before { content: "02 /"; }
+#writing .section-heading::before { content: "03 /"; }
+#contact .section-heading::before { content: "04 /"; }
+h2 { font-size: 20px; line-height: 1.35; font-weight: 600; margin: 0; letter-spacing: -.035em; }
+.section-body { min-width: 0; max-width: 690px; color: var(--muted); }
+.section-body p:last-child { margin-bottom: 0; }
+.writing-note { color: var(--muted); font: 12px/1.7 var(--mono); padding: 10px 0 10px 14px; border-left: 2px solid var(--accent); margin-top: 20px; }
+.writing-list { list-style: none; margin: 20px 0 0; padding: 0; }
+.writing-list:not(:has(li)) { display: none; }
+.writing-list li { padding: 14px 0; border-top: 1px solid var(--line); }
+.writing-list a { font-weight: 600; }
+.writing-list small { display: block; color: var(--muted); }
+.contact-links { display: flex; flex-wrap: wrap; gap: 10px 23px; }
+.contact-links a { overflow-wrap: anywhere; font: 13px/1.7 var(--mono); }
+.footer { border-top: 1px solid var(--line); padding: 23px 0 36px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px; color: var(--muted); font: 11px/1.7 var(--mono); }
+.footer a { color: var(--muted); text-decoration: none; }
+.footer a:hover { color: var(--accent); }
+.skip { position: absolute; left: 15px; top: -100px; background: var(--surface); padding: 10px; z-index: 3; }
+.skip:focus { top: 10px; }
+@media (max-width: 850px) {
+  .wrap { padding: 0 28px; }
+  .hero { grid-template-columns: minmax(0, 1fr) 205px; gap: 26px; padding: 68px 0 60px; }
+  .section { grid-template-columns: 175px minmax(0, 1fr); gap: 22px; }
+  .navlinks { gap: 14px; }
+}
+@media (max-width: 650px) {
+  .wrap { padding: 0 21px; }
+  .nav { flex-wrap: wrap; gap: 13px; padding: 18px 0; }
+  .navlinks { width: 100%; gap: 12px 16px; }
+  .hero { grid-template-columns: 1fr; gap: 24px; padding: 44px 0 36px; }
+  h1 { font-size: clamp(37px, 9vw, 55px); }
+  .lead { font-size: 17px; }
+  .graph { width: 190px; }
+  .section { grid-template-columns: 1fr; gap: 15px; padding: 29px 0 33px; }
+  .section-heading { gap: 10px; }
+  .actions { gap: 11px 17px; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { transition: none !important; } }
 
-/* Personal homepage layout */
-.hero{padding:78px 0 68px;align-items:center}
-.hero h1{font-size:clamp(46px,7vw,78px)}
-.hero .lead{font-size:21px;line-height:1.55;max-width:625px}
-.hero .intro{font-size:16px;color:var(--muted);max-width:630px;margin-top:17px}
-.hero .actions{margin-top:23px;gap:18px 24px;align-items:center}
-.hero .actions a:not(.btn){font-size:14px;font-weight:600;text-decoration:none}
-.hero .actions a:hover{text-decoration:underline}
-.section-heading{grid-template-columns:1fr;gap:0;margin-bottom:19px}
-.section-heading h2{margin-top:0;font-size:clamp(30px,4vw,39px);letter-spacing:-.035em}
-.section-body{margin-left:0;max-width:730px}
-.section{padding:36px 0 40px}
-.about-copy,.contact-copy{font-size:16px;line-height:1.75;max-width:730px}
-.about-copy p:last-child,.contact-copy:last-child{margin-bottom:0}
-.writing-note{padding:17px 20px;border-left:2px solid var(--accent);background:var(--soft);border-radius:0 7px 7px 0;font-size:15px;color:var(--muted);margin:21px 0 0}
-.writing-list{list-style:none;margin:20px 0 0;padding:0}
-.writing-list:not(:has(li)){display:none}
-.writing-list li{padding:14px 0;border-top:1px solid var(--line)}
-.writing-list a{font-weight:600}
-.writing-list small{display:block;color:var(--muted)}
-@media(max-width:760px){.hero{padding:52px 0 44px}.hero .lead{font-size:18px}.section{padding:30px 0 34px}}
-@media(max-width:500px){.hero{padding:36px 0 34px}.hero h1{font-size:clamp(38px,11vw,56px)}.hero .actions{gap:12px 20px}.hero .intro{font-size:15px}.navlinks{gap:12px 16px}}
+/* Interactive graph background: the copy sits above a fading, unboxed SVG. */
+.hero { position: relative; isolation: isolate; display: block; min-height: 400px; overflow: hidden; }
+.hero > div { position: relative; z-index: 1; max-width: 650px; width: 64%; }
+.hero .lead { max-width: 565px; }
+.graph { position: absolute; z-index: 0; inset: 0 -18px 0 auto; width: 67%; margin: 0; pointer-events: none; display: flex; align-items: center; }
+.graph svg { width: 100%; height: auto; overflow: visible; mask-image: linear-gradient(to right, transparent 0%, #000 45%, #000 96%, transparent 100%); }
+.mesh-edge { stroke: var(--edge); stroke-width: .85; opacity: .24; }
+.mesh-edge.accent-edge { stroke: var(--accent); opacity: .43; }
+.mesh-node { fill: var(--blue); opacity: .57; }
+.mesh-node.accent-node { fill: var(--accent); opacity: .85; }
+.graph figcaption { position: absolute; bottom: 22px; right: 28px; color: var(--muted); opacity: .65; font: 10px/1.5 var(--mono); letter-spacing: .015em; }
+.graph figcaption span { padding: 0 4px; }
+@media (max-width: 850px) {
+  .hero { min-height: 345px; }
+  .hero > div { width: 72%; }
+  .graph { width: 72%; }
+  .graph svg { mask-image: linear-gradient(to right, transparent 10%, #000 65%, #000 96%, transparent 100%); }
+}
+@media (max-width: 650px) {
+  .hero { min-height: 0; overflow: hidden; padding-bottom: 20px; }
+  .hero > div { width: 100%; }
+  .graph { position: relative; inset: auto; width: 100%; max-width: 460px; height: 150px; margin: 16px 0 0 auto; overflow: hidden; }
+  .graph svg { position: absolute; right: 0; top: 50%; transform: translateY(-52%); mask-image: linear-gradient(to right, transparent, #000 22%, #000 96%, transparent); }
+  .graph figcaption { bottom: 0; right: 2px; background: var(--bg); padding: 2px 5px; }
+}
 </style>
 </head>
 <body>
@@ -75,18 +171,125 @@ h1{font-size:clamp(45px,7.1vw,78px);overflow-wrap:anywhere}.hero{gap:42px}.entry
           <a href="mailto:ahaapalainen@uchicago.edu">Email ↗</a>
         </div>
       </div>
-      <!-- Optional: Replace the monogram with a headshot in the future. -->
-      <div class="portrait" role="img" aria-label="Andreas Haapalainen monogram">
-        <span class="monogram" aria-hidden="true">AH</span>
-      </div>
+      <!-- Decorative interactive graph: fixed vertices and edges; pointer deforms the drawing. -->
+      <figure class="graph" aria-hidden="true">
+        <svg id="interactive-graph" viewBox="0 0 720 390" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g class="mesh-edges">
+            <line class="mesh-edge" data-a="0" data-b="1" x1="40" y1="165" x2="80" y2="80"/>
+            <line class="mesh-edge" data-a="0" data-b="2" x1="40" y1="165" x2="110" y2="245"/>
+            <line class="mesh-edge" data-a="0" data-b="3" x1="40" y1="165" x2="145" y2="135"/>
+            <line class="mesh-edge" data-a="1" data-b="3" x1="80" y1="80" x2="145" y2="135"/>
+            <line class="mesh-edge" data-a="1" data-b="5" x1="80" y1="80" x2="190" y2="45"/>
+            <line class="mesh-edge" data-a="2" data-b="3" x1="110" y1="245" x2="145" y2="135"/>
+            <line class="mesh-edge" data-a="2" data-b="4" x1="110" y1="245" x2="155" y2="325"/>
+            <line class="mesh-edge" data-a="2" data-b="6" x1="110" y1="245" x2="205" y2="220"/>
+            <line class="mesh-edge" data-a="3" data-b="5" x1="145" y1="135" x2="190" y2="45"/>
+            <line class="mesh-edge" data-a="3" data-b="6" x1="145" y1="135" x2="205" y2="220"/>
+            <line class="mesh-edge accent-edge" data-a="3" data-b="7" x1="145" y1="135" x2="230" y2="125"/>
+            <line class="mesh-edge" data-a="4" data-b="6" x1="155" y1="325" x2="205" y2="220"/>
+            <line class="mesh-edge" data-a="4" data-b="8" x1="155" y1="325" x2="245" y2="295"/>
+            <line class="mesh-edge" data-a="5" data-b="7" x1="190" y1="45" x2="230" y2="125"/>
+            <line class="mesh-edge" data-a="5" data-b="9" x1="190" y1="45" x2="275" y2="62"/>
+            <line class="mesh-edge" data-a="6" data-b="7" x1="205" y1="220" x2="230" y2="125"/>
+            <line class="mesh-edge" data-a="6" data-b="8" x1="205" y1="220" x2="245" y2="295"/>
+            <line class="mesh-edge" data-a="6" data-b="10" x1="205" y1="220" x2="290" y2="190"/>
+            <line class="mesh-edge" data-a="7" data-b="9" x1="230" y1="125" x2="275" y2="62"/>
+            <line class="mesh-edge" data-a="7" data-b="10" x1="230" y1="125" x2="290" y2="190"/>
+            <line class="mesh-edge accent-edge" data-a="7" data-b="13" x1="230" y1="125" x2="340" y2="128"/>
+            <line class="mesh-edge" data-a="8" data-b="10" x1="245" y1="295" x2="290" y2="190"/>
+            <line class="mesh-edge" data-a="8" data-b="11" x1="245" y1="295" x2="325" y2="350"/>
+            <line class="mesh-edge" data-a="8" data-b="12" x1="245" y1="295" x2="320" y2="265"/>
+            <line class="mesh-edge" data-a="9" data-b="13" x1="275" y1="62" x2="340" y2="128"/>
+            <line class="mesh-edge" data-a="9" data-b="14" x1="275" y1="62" x2="380" y2="38"/>
+            <line class="mesh-edge" data-a="10" data-b="12" x1="290" y1="190" x2="320" y2="265"/>
+            <line class="mesh-edge" data-a="10" data-b="13" x1="290" y1="190" x2="340" y2="128"/>
+            <line class="mesh-edge accent-edge" data-a="10" data-b="15" x1="290" y1="190" x2="400" y2="215"/>
+            <line class="mesh-edge" data-a="11" data-b="12" x1="325" y1="350" x2="320" y2="265"/>
+            <line class="mesh-edge" data-a="11" data-b="16" x1="325" y1="350" x2="410" y2="320"/>
+            <line class="mesh-edge" data-a="12" data-b="15" x1="320" y1="265" x2="400" y2="215"/>
+            <line class="mesh-edge" data-a="12" data-b="16" x1="320" y1="265" x2="410" y2="320"/>
+            <line class="mesh-edge" data-a="13" data-b="14" x1="340" y1="128" x2="380" y2="38"/>
+            <line class="mesh-edge" data-a="13" data-b="15" x1="340" y1="128" x2="400" y2="215"/>
+            <line class="mesh-edge accent-edge" data-a="13" data-b="17" x1="340" y1="128" x2="430" y2="105"/>
+            <line class="mesh-edge" data-a="14" data-b="17" x1="380" y1="38" x2="430" y2="105"/>
+            <line class="mesh-edge" data-a="14" data-b="20" x1="380" y1="38" x2="520" y2="62"/>
+            <line class="mesh-edge" data-a="15" data-b="16" x1="400" y1="215" x2="410" y2="320"/>
+            <line class="mesh-edge" data-a="15" data-b="17" x1="400" y1="215" x2="430" y2="105"/>
+            <line class="mesh-edge accent-edge" data-a="15" data-b="18" x1="400" y1="215" x2="465" y2="165"/>
+            <line class="mesh-edge" data-a="15" data-b="19" x1="400" y1="215" x2="480" y2="270"/>
+            <line class="mesh-edge" data-a="16" data-b="19" x1="410" y1="320" x2="480" y2="270"/>
+            <line class="mesh-edge" data-a="16" data-b="21" x1="410" y1="320" x2="535" y2="345"/>
+            <line class="mesh-edge accent-edge" data-a="17" data-b="18" x1="430" y1="105" x2="465" y2="165"/>
+            <line class="mesh-edge" data-a="17" data-b="20" x1="430" y1="105" x2="520" y2="62"/>
+            <line class="mesh-edge" data-a="18" data-b="19" x1="465" y1="165" x2="480" y2="270"/>
+            <line class="mesh-edge" data-a="18" data-b="20" x1="465" y1="165" x2="520" y2="62"/>
+            <line class="mesh-edge" data-a="18" data-b="22" x1="465" y1="165" x2="550" y2="200"/>
+            <line class="mesh-edge" data-a="18" data-b="23" x1="465" y1="165" x2="570" y2="115"/>
+            <line class="mesh-edge" data-a="19" data-b="21" x1="480" y1="270" x2="535" y2="345"/>
+            <line class="mesh-edge" data-a="19" data-b="22" x1="480" y1="270" x2="550" y2="200"/>
+            <line class="mesh-edge" data-a="19" data-b="24" x1="480" y1="270" x2="600" y2="280"/>
+            <line class="mesh-edge" data-a="20" data-b="23" x1="520" y1="62" x2="570" y2="115"/>
+            <line class="mesh-edge" data-a="20" data-b="25" x1="520" y1="62" x2="615" y2="42"/>
+            <line class="mesh-edge" data-a="21" data-b="24" x1="535" y1="345" x2="600" y2="280"/>
+            <line class="mesh-edge" data-a="21" data-b="27" x1="535" y1="345" x2="650" y2="350"/>
+            <line class="mesh-edge" data-a="22" data-b="23" x1="550" y1="200" x2="570" y2="115"/>
+            <line class="mesh-edge" data-a="22" data-b="24" x1="550" y1="200" x2="600" y2="280"/>
+            <line class="mesh-edge" data-a="22" data-b="26" x1="550" y1="200" x2="630" y2="165"/>
+            <line class="mesh-edge" data-a="23" data-b="25" x1="570" y1="115" x2="615" y2="42"/>
+            <line class="mesh-edge" data-a="23" data-b="26" x1="570" y1="115" x2="630" y2="165"/>
+            <line class="mesh-edge" data-a="23" data-b="28" x1="570" y1="115" x2="675" y2="90"/>
+            <line class="mesh-edge" data-a="24" data-b="26" x1="600" y1="280" x2="630" y2="165"/>
+            <line class="mesh-edge" data-a="24" data-b="27" x1="600" y1="280" x2="650" y2="350"/>
+            <line class="mesh-edge" data-a="24" data-b="29" x1="600" y1="280" x2="690" y2="240"/>
+            <line class="mesh-edge" data-a="25" data-b="28" x1="615" y1="42" x2="675" y2="90"/>
+            <line class="mesh-edge" data-a="26" data-b="28" x1="630" y1="165" x2="675" y2="90"/>
+            <line class="mesh-edge" data-a="26" data-b="29" x1="630" y1="165" x2="690" y2="240"/>
+            <line class="mesh-edge" data-a="27" data-b="29" x1="650" y1="350" x2="690" y2="240"/>
+            <line class="mesh-edge" data-a="28" data-b="29" x1="675" y1="90" x2="690" y2="240"/>
+          </g>
+          <g class="mesh-nodes">
+            <circle class="mesh-node" cx="40" cy="165" r="2.2"/>
+            <circle class="mesh-node" cx="80" cy="80" r="2.2"/>
+            <circle class="mesh-node" cx="110" cy="245" r="2.2"/>
+            <circle class="mesh-node accent-node" cx="145" cy="135" r="2.2"/>
+            <circle class="mesh-node" cx="155" cy="325" r="2.2"/>
+            <circle class="mesh-node" cx="190" cy="45" r="2.2"/>
+            <circle class="mesh-node" cx="205" cy="220" r="2.2"/>
+            <circle class="mesh-node accent-node" cx="230" cy="125" r="3"/>
+            <circle class="mesh-node" cx="245" cy="295" r="2.2"/>
+            <circle class="mesh-node" cx="275" cy="62" r="2.2"/>
+            <circle class="mesh-node accent-node" cx="290" cy="190" r="2.2"/>
+            <circle class="mesh-node" cx="325" cy="350" r="2.2"/>
+            <circle class="mesh-node" cx="320" cy="265" r="2.2"/>
+            <circle class="mesh-node accent-node" cx="340" cy="128" r="3"/>
+            <circle class="mesh-node" cx="380" cy="38" r="2.2"/>
+            <circle class="mesh-node accent-node" cx="400" cy="215" r="2.2"/>
+            <circle class="mesh-node" cx="410" cy="320" r="2.2"/>
+            <circle class="mesh-node accent-node" cx="430" cy="105" r="2.2"/>
+            <circle class="mesh-node accent-node" cx="465" cy="165" r="3"/>
+            <circle class="mesh-node" cx="480" cy="270" r="2.2"/>
+            <circle class="mesh-node" cx="520" cy="62" r="2.2"/>
+            <circle class="mesh-node" cx="535" cy="345" r="2.2"/>
+            <circle class="mesh-node accent-node" cx="550" cy="200" r="2.2"/>
+            <circle class="mesh-node" cx="570" cy="115" r="2.2"/>
+            <circle class="mesh-node" cx="600" cy="280" r="2.2"/>
+            <circle class="mesh-node" cx="615" cy="42" r="2.2"/>
+            <circle class="mesh-node accent-node" cx="630" cy="165" r="3"/>
+            <circle class="mesh-node" cx="650" cy="350" r="2.2"/>
+            <circle class="mesh-node" cx="675" cy="90" r="2.2"/>
+            <circle class="mesh-node" cx="690" cy="240" r="2.2"/>
+          </g>
+        </svg>
+        <figcaption>G = (V, E) <span>·</span> |V| = 30 · |E| = 71</figcaption>
+      </figure>
     </section>
 
     <!-- EDIT 2: Academic and personal interests. -->
     <section class="section" id="about">
       <div class="section-heading"><h2>About me</h2></div>
       <div class="section-body about-copy">
-        <p>My interests are varied: first and foremost, I am fascinated by the application of mathematics as a language to describe universal truth, especially in domains not commonly exposed to mathematical language.
-        <p>Formally, I am interested in graph theory and mathematical analysis.
+        <p>My interests are varied: first and foremost, I am fascinated by the application of mathematics as a language to describe universal truth, especially in domains not commonly exposed to mathematical language.</p>
+        <p>Formally, I am interested in graph theory and mathematical analysis.</p>
       </div>
     </section>
 
@@ -94,7 +297,7 @@ h1{font-size:clamp(45px,7.1vw,78px);overflow-wrap:anywhere}.hero{gap:42px}.entry
     <section class="section" id="background">
       <div class="section-heading"><h2>Background</h2></div>
       <div class="section-body about-copy">
-        <p>I'm pursuing a B.S. in mathematics and computer science at the University of Chicago.
+        <p>I'm pursuing a B.S. in mathematics and computer science at the University of Chicago.</p>
         <p>I currently serve as a discussion section leader in UChicago's Department of Computer Science, supporting introductory computer science instruction. In the summer of 2026, I worked as a data analyst and engineering intern at Silly Pickles, focusing on data integrity, automation, and financial analytics.</p>
         <p>Before Chicago, I attended Los Gatos High School, where I graduated as Salutatorian in 2025.</p>
       </div>
@@ -135,10 +338,79 @@ h1{font-size:clamp(45px,7.1vw,78px);overflow-wrap:anywhere}.hero{gap:42px}.entry
 </div>
 <script>
 const root=document.documentElement, button=document.getElementById('theme');
-try{const saved=localStorage.getItem('portfolio-theme');if(saved==='dark'||saved==='light')root.dataset.theme=saved;}catch(e){}
-const isDark=()=>root.dataset.theme?root.dataset.theme==='dark':matchMedia('(prefers-color-scheme: dark)').matches;
+try{const saved=localStorage.getItem('andreas-site-theme-v2');if(saved==='dark'||saved==='light')root.dataset.theme=saved;}catch(e){}
+const isDark=()=>root.dataset.theme!=='light';
 function updateThemeButton(){button.setAttribute('aria-label',isDark()?'Switch to light mode':'Switch to dark mode');button.innerHTML=isDark()?'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg>':'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M20.9 13.2A9 9 0 0 1 10.8 3.1 9 9 0 1 0 20.9 13.2Z"/></svg>';}
-button.addEventListener('click',()=>{root.dataset.theme=isDark()?'light':'dark';try{localStorage.setItem('portfolio-theme',root.dataset.theme);}catch(e){}updateThemeButton();});
+button.addEventListener('click',()=>{root.dataset.theme=isDark()?'light':'dark';try{localStorage.setItem('andreas-site-theme-v2',root.dataset.theme);}catch(e){}updateThemeButton();});
 updateThemeButton();document.getElementById('year').textContent=new Date().getFullYear();
+
+/* Interactive SVG graph. Edges retain their topology as vertices move.
+   Motion is bounded, event-driven, and disabled for reduced-motion users. */
+(() => {
+  const svg = document.getElementById('interactive-graph');
+  const hero = document.getElementById('home');
+  const reduced = matchMedia('(prefers-reduced-motion: reduce)');
+  const nodes = [...svg.querySelectorAll('.mesh-node')].map(el => {
+    const x = +el.getAttribute('cx'), y = +el.getAttribute('cy');
+    return {el, x, y, dx: 0, dy: 0, vx: 0, vy: 0, base: el.classList.contains('accent-node') ? .85 : .57, r: +el.getAttribute('r')};
+  });
+  const edges = [...svg.querySelectorAll('.mesh-edge')].map(el => ({el, a: nodes[+el.dataset.a], b: nodes[+el.dataset.b], base: el.classList.contains('accent-edge') ? .43 : .24}));
+  let pointer = null, frame = 0;
+  const radius = 115, displacement = 31;
+  function render() {
+    frame = 0;
+    let moving = false;
+    for (const n of nodes) {
+      let tx = 0, ty = 0, glow = 0;
+      if (pointer) {
+        const x = n.x - pointer.x, y = n.y - pointer.y;
+        const d = Math.hypot(x, y);
+        if (d < radius) {
+          glow = Math.pow(1 - d / radius, 1.6);
+          if (d > .01) { tx = x / d * displacement * glow; ty = y / d * displacement * glow; }
+          else { tx = displacement; }
+        }
+      }
+      n.vx = (n.vx + (tx - n.dx) * .10) * .72;
+      n.vy = (n.vy + (ty - n.dy) * .10) * .72;
+      n.dx += n.vx; n.dy += n.vy;
+      if (Math.abs(n.vx) + Math.abs(n.vy) + Math.abs(n.dx-tx) + Math.abs(n.dy-ty) > .035) moving = true;
+      else { n.dx = tx; n.dy = ty; n.vx = n.vy = 0; }
+      n.glow = glow;
+      n.el.setAttribute('cx', (n.x+n.dx).toFixed(2));
+      n.el.setAttribute('cy', (n.y+n.dy).toFixed(2));
+      n.el.setAttribute('r', (n.r+glow*2.2).toFixed(2));
+      n.el.style.opacity = Math.min(1, n.base+glow*.55);
+    }
+    for (const {el,a,b,base} of edges) {
+      el.setAttribute('x1', (a.x+a.dx).toFixed(2)); el.setAttribute('y1', (a.y+a.dy).toFixed(2));
+      el.setAttribute('x2', (b.x+b.dx).toFixed(2)); el.setAttribute('y2', (b.y+b.dy).toFixed(2));
+      const glow = Math.max(a.glow,b.glow);
+      el.style.opacity = Math.min(.95,base+glow*.72);
+      el.style.strokeWidth = .85+glow*1.1;
+    }
+    if (moving) requestFrame();
+  }
+  function requestFrame() { if (!frame) frame = requestAnimationFrame(render); }
+  function reset() { pointer = null; requestFrame(); }
+  hero.addEventListener('pointermove', e => {
+    if (reduced.matches || e.pointerType === 'touch') return;
+    const m = svg.getScreenCTM();
+    if (!m) return;
+    pointer = new DOMPoint(e.clientX,e.clientY).matrixTransform(m.inverse());
+    requestFrame();
+  }, {passive: true});
+  hero.addEventListener('pointerleave', reset);
+  hero.addEventListener('pointercancel', reset);
+  window.addEventListener('blur', reset);
+  reduced.addEventListener('change', () => {
+    if (!reduced.matches) return;
+    pointer = null;
+    if (frame) cancelAnimationFrame(frame);
+    frame = 0;
+    for (const n of nodes) n.dx = n.dy = n.vx = n.vy = 0;
+    render();
+  });
+})();
 </script>
 </body></html>
