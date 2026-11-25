@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Andreas Haapalainen — mathematics and computer science undergraduate at the University of Chicago.">
+<meta name="color-scheme" content="light dark">
+<title>Andreas Haapalainen — Personal website</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231f514b'/%3E%3Ctext x='32' y='41' font-size='29' fill='white' text-anchor='middle' font-family='Georgia'%3EAH%3C/text%3E%3C/svg%3E">
+<style>
+:root{color-scheme:light;--bg:#f8f8f4;--surface:#fff;--ink:#202a29;--muted:#586763;--accent:#235c54;--line:#dce3dc;--soft:#e9f0ea;--shadow:0 12px 35px #253f3210}
+:root[data-theme=dark]{color-scheme:dark;--bg:#131b1b;--surface:#1a2424;--ink:#edf3ee;--muted:#b0c0b8;--accent:#a0d4ba;--line:#354744;--soft:#233731;--shadow:0 12px 35px #0002}
+@media(prefers-color-scheme:dark){:root:not([data-theme]){color-scheme:dark;--bg:#131b1b;--surface:#1a2424;--ink:#edf3ee;--muted:#b0c0b8;--accent:#a0d4ba;--line:#354744;--soft:#233731;--shadow:0 12px 35px #0002}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}a{color:var(--accent);text-underline-offset:4px}button{font:inherit}a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:5px}::selection{background:var(--soft);color:var(--ink)}.wrap{max-width:1050px;margin:auto;padding:0 34px}.nav{display:flex;align-items:center;justify-content:space-between;gap:22px;padding:25px 0;border-bottom:1px solid var(--line)}.brand{display:flex;align-items:center;gap:11px;font-weight:700;text-decoration:none;color:var(--ink);white-space:nowrap}.brandmark{height:34px;width:34px;display:grid;place-items:center;border:1px solid var(--line);border-radius:9px;color:var(--accent);font-family:Georgia,serif;font-size:16px}.navlinks{display:flex;align-items:center;gap:24px;flex-wrap:wrap}.navlinks a{font-size:14px;color:var(--muted);text-decoration:none}.navlinks a:hover{color:var(--accent)}.theme{border:1px solid var(--line);color:var(--ink);background:var(--surface);height:36px;width:36px;border-radius:50%;display:grid;place-items:center;cursor:pointer}.theme svg{width:17px;height:17px}.hero{display:grid;grid-template-columns:minmax(0,1fr) 235px;gap:60px;align-items:center;padding:90px 0 78px}.eyebrow,.section-kicker{font-size:11px;letter-spacing:.19em;font-weight:750;text-transform:uppercase;color:var(--accent)}h1,h2{font-family:Georgia,"Times New Roman",serif;font-weight:400;letter-spacing:-.045em;line-height:1.07;margin:0}h1{font-size:clamp(58px,8vw,88px);margin:14px 0 19px}h2{font-size:clamp(33px,5vw,46px)}p{margin:0 0 16px}.lead{font-size:21px;line-height:1.5;max-width:620px;color:var(--muted)}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:27px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:1px solid var(--accent);border-radius:7px;font-size:14px;padding:11px 19px;text-decoration:none;font-weight:650;background:var(--accent);color:var(--bg);transition:transform .15s}.btn:hover{transform:translateY(-2px)}.btn.secondary{background:transparent;color:var(--accent);border-color:var(--line)}.portrait{position:relative;aspect-ratio:1/1.08;display:grid;place-items:center;overflow:hidden;border:1px solid var(--line);border-radius:15px;background:var(--soft)}.portrait:before,.portrait:after{content:"";position:absolute;width:270px;height:270px;border:1px solid var(--accent);opacity:.16;transform:rotate(35deg);border-radius:38%}.portrait:after{width:210px;height:210px;transform:rotate(-30deg)}.monogram{font:76px/1 Georgia,serif;letter-spacing:-.09em;color:var(--accent);z-index:1;padding-right:7px}.portrait small{position:absolute;bottom:15px;font-size:10px;letter-spacing:.18em;color:var(--muted);text-transform:uppercase}.section{border-top:1px solid var(--line);padding:48px 0 53px;scroll-margin-top:20px}.section-heading{display:grid;grid-template-columns:200px minmax(0,1fr);gap:25px;align-items:baseline;margin-bottom:25px}.section-heading h2{margin-top:8px}.section-body{margin-left:225px}.about-copy{max-width:650px;color:var(--muted);font-size:17px}.tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:23px}.tag{border:1px solid var(--line);background:var(--surface);padding:4px 11px;border-radius:100px;font-size:12px;color:var(--muted)}.project-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}.project{border:1px solid var(--line);border-radius:12px;padding:24px;background:var(--surface);box-shadow:var(--shadow)}.project-top{display:flex;align-items:center;justify-content:space-between;color:var(--accent);margin-bottom:28px}.project-icon{width:40px;height:40px;border-radius:9px;background:var(--soft);display:grid;place-items:center}.project-icon svg{width:23px;height:23px}.number{font-size:12px;letter-spacing:.12em;color:var(--muted)}h3{font-size:19px;line-height:1.35;margin:0 0 9px;letter-spacing:-.025em}.project p,.entry p{font-size:14px;color:var(--muted);margin-bottom:0}.project .tag{display:inline-block;margin-top:19px}.entry{display:grid;grid-template-columns:1fr auto;gap:8px 20px;padding:20px 0;border-bottom:1px solid var(--line)}.entry:first-child{padding-top:0}.entry:last-child{border-bottom:0;padding-bottom:0}.entry h3{margin:0}.entry .date{font-size:13px;color:var(--muted)}.entry p{grid-column:1/-1}.contact-copy{max-width:550px;color:var(--muted);font-size:17px}.contact-note{font-size:13px;color:var(--muted);border-left:2px solid var(--line);padding-left:12px}.footer{border-top:1px solid var(--line);padding:24px 0 35px;display:flex;justify-content:space-between;gap:16px;color:var(--muted);font-size:13px}.skip{position:absolute;left:15px;top:-100px;background:var(--surface);padding:10px;z-index:3}.skip:focus{top:10px}
+@media(max-width:760px){.wrap{padding:0 23px}.hero{grid-template-columns:1fr 145px;gap:25px;padding:58px 0 50px}.monogram{font-size:49px}.section-heading{grid-template-columns:1fr;gap:0}.section-body{margin-left:0}.section{padding:37px 0}.navlinks{gap:14px}.navlinks a{font-size:13px}.lead{font-size:18px}}
+@media(max-width:500px){.nav{align-items:flex-start;flex-wrap:wrap;gap:12px;padding:18px 0}.navlinks{width:100%;justify-content:space-between;gap:8px}.hero{grid-template-columns:1fr;padding:44px 0 38px;gap:22px}.portrait{grid-row:1;width:95px;border-radius:11px;aspect-ratio:1}.monogram{font-size:35px}.portrait small{display:none}.project-grid{grid-template-columns:1fr}.footer{flex-wrap:wrap}.entry{grid-template-columns:1fr}.entry p{grid-column:1}.entry .date{grid-row:2}h1{font-size:58px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+
+/* Academic homepage refinements */
+h1{font-size:clamp(45px,7.1vw,78px);overflow-wrap:anywhere}.hero{gap:42px}.entry .organization{grid-column:1/-1;font-size:15px;color:var(--accent);margin:-4px 0 0}.entry .details{grid-column:1/-1;color:var(--muted);font-size:14px;margin:2px 0 0;padding-left:19px}.details li+li{margin-top:5px}.interest-list{display:grid;gap:0}.interest-list article{padding:20px 0;border-bottom:1px solid var(--line)}.interest-list article:first-child{padding-top:0}.interest-list article:last-child{border:0;padding-bottom:0}.interest-list p{font-size:15px;color:var(--muted);margin:0}.interest-list h3{margin-bottom:5px}.coursework{margin-top:22px}.coursework h3{font-size:15px}.coursework p{font-size:14px;color:var(--muted)}.contact-links{display:flex;flex-wrap:wrap;gap:12px 24px;align-items:center}.contact-links a{overflow-wrap:anywhere}.subtle{font-size:13px;color:var(--muted)}
+@media(max-width:760px){.hero{gap:25px}.navlinks{gap:12px}}
+@media(max-width:500px){h1{font-size:clamp(38px,11vw,56px)}.navlinks{justify-content:flex-start;gap:8px 15px}.hero{gap:22px}.entry .date{grid-row:auto}.entry .organization{margin:0}}
+
+/* Personal homepage layout */
+.hero{padding:78px 0 68px;align-items:center}
+.hero h1{font-size:clamp(46px,7vw,78px)}
+.hero .lead{font-size:21px;line-height:1.55;max-width:625px}
+.hero .intro{font-size:16px;color:var(--muted);max-width:630px;margin-top:17px}
+.hero .actions{margin-top:23px;gap:18px 24px;align-items:center}
+.hero .actions a:not(.btn){font-size:14px;font-weight:600;text-decoration:none}
+.hero .actions a:hover{text-decoration:underline}
+.section-heading{grid-template-columns:1fr;gap:0;margin-bottom:19px}
+.section-heading h2{margin-top:0;font-size:clamp(30px,4vw,39px);letter-spacing:-.035em}
+.section-body{margin-left:0;max-width:730px}
+.section{padding:36px 0 40px}
+.about-copy,.contact-copy{font-size:16px;line-height:1.75;max-width:730px}
+.about-copy p:last-child,.contact-copy:last-child{margin-bottom:0}
+.writing-note{padding:17px 20px;border-left:2px solid var(--accent);background:var(--soft);border-radius:0 7px 7px 0;font-size:15px;color:var(--muted);margin:21px 0 0}
+.writing-list{list-style:none;margin:20px 0 0;padding:0}
+.writing-list:not(:has(li)){display:none}
+.writing-list li{padding:14px 0;border-top:1px solid var(--line)}
+.writing-list a{font-weight:600}
+.writing-list small{display:block;color:var(--muted)}
+@media(max-width:760px){.hero{padding:52px 0 44px}.hero .lead{font-size:18px}.section{padding:30px 0 34px}}
+@media(max-width:500px){.hero{padding:36px 0 34px}.hero h1{font-size:clamp(38px,11vw,56px)}.hero .actions{gap:12px 20px}.hero .intro{font-size:15px}.navlinks{gap:12px 16px}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="wrap">
+  <header>
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="#home"><span class="brandmark" aria-hidden="true">AH</span>Andreas Haapalainen</a>
+      <div class="navlinks">
+        <a href="#about">About</a>
+        <a href="#background">Background</a>
+        <a href="#writing">Writing</a>
+        <a href="#contact">Contact</a>
+        <button class="theme" id="theme" type="button" aria-label="Toggle color theme" title="Toggle light or dark mode">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M20.9 13.2A9 9 0 0 1 10.8 3.1 9 9 0 1 0 20.9 13.2Z"/></svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+  <main id="main">
+    <!-- EDIT 1: Your introduction. Change the words between the <p> and </p> tags. -->
+    <section class="hero" id="home">
+      <div>
+        <div class="eyebrow">University of Chicago · Mathematics &amp; Computer Science</div>
+        <h1>Andreas Haapalainen<span style="color:var(--accent)">.</span></h1>
+        <p class="lead">I'm an undergraduate at the University of Chicago studying mathematics and computer science, with a particular interest in theoretical computer science.</p>
+        <p class="intro">My interests also extend to pure mathematics and political theory.</p>
+        <div class="actions">
+          <a class="btn" href="#writing">Notes &amp; writing <span aria-hidden="true">↗</span></a>
+          <a href="https://www.linkedin.com/in/andreashaapalainen/">LinkedIn ↗</a>
+          <a href="mailto:ahaapalainen@uchicago.edu">Email ↗</a>
+        </div>
+      </div>
+      <!-- Optional: Replace the monogram with a headshot in the future. -->
+      <div class="portrait" role="img" aria-label="Andreas Haapalainen monogram">
+        <span class="monogram" aria-hidden="true">AH</span>
+      </div>
+    </section>
+
+    <!-- EDIT 2: Academic and personal interests. -->
+    <section class="section" id="about">
+      <div class="section-heading"><h2>About me</h2></div>
+      <div class="section-body about-copy">
+        <p>Within theoretical computer science, I'm especially interested in graph theory. In pure mathematics, I'm particularly interested in real analysis. I enjoy exploring these areas without limiting myself to a single field.</p>
+        <p>Outside of academics, I enjoy mountain biking, poker, and competition mathematics.</p>
+      </div>
+    </section>
+
+    <!-- EDIT 3: Education and experience, written as a brief narrative instead of a résumé. -->
+    <section class="section" id="background">
+      <div class="section-heading"><h2>Background</h2></div>
+      <div class="section-body about-copy">
+        <p>I'm pursuing a B.S. in mathematics and computer science at the University of Chicago (class of 2029), where my coursework has included accelerated real analysis, honors discrete mathematics, and abstract linear algebra.</p>
+        <p>I currently serve as a discussion section leader in UChicago's Department of Computer Science, supporting introductory computer science instruction. In the summer of 2026, I worked as a data analyst and engineering intern at Silly Pickles, focusing on data integrity, automation, and financial analytics.</p>
+        <p>Before college, I attended Los Gatos High School, where I was involved in teaching and mentoring students in competition mathematics.</p>
+      </div>
+    </section>
+
+    <!-- EDIT 4: Notes and writing. Add links when you have something to share. -->
+    <section class="section" id="writing">
+      <div class="section-heading"><h2>Notes &amp; writing</h2></div>
+      <div class="section-body about-copy">
+        <p>I plan to use this space for mathematical notes, expository writing, and occasional essays on topics I find interesting.</p>
+        <p class="writing-note" id="writing-placeholder">Nothing published here yet.</p>
+        <ul class="writing-list" aria-label="Published writing">
+          <!-- When you publish your first piece, delete the writing-placeholder paragraph above,
+               then copy the following example outside this comment and edit the link and text.
+               Upload the matching PDF to the same repository.
+          <li>
+            <a href="my-first-note.pdf">Title of your note</a>
+            <small>Month Year · A short description of the piece.</small>
+          </li>
+          -->
+        </ul>
+      </div>
+    </section>
+
+    <!-- EDIT 5: Public contact information. -->
+    <section class="section" id="contact">
+      <div class="section-heading"><h2>Contact</h2></div>
+      <div class="section-body">
+        <p class="contact-copy">Feel free to reach out if you'd like to get in touch.</p>
+        <div class="contact-links">
+          <a href="mailto:ahaapalainen@uchicago.edu">ahaapalainen@uchicago.edu</a>
+          <a href="https://www.linkedin.com/in/andreashaapalainen/">LinkedIn ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer"><span>© <span id="year">2026</span> Andreas Haapalainen</span><a href="#home">Back to top ↑</a></footer>
+</div>
+<script>
+const root=document.documentElement, button=document.getElementById('theme');
+try{const saved=localStorage.getItem('portfolio-theme');if(saved==='dark'||saved==='light')root.dataset.theme=saved;}catch(e){}
+const isDark=()=>root.dataset.theme?root.dataset.theme==='dark':matchMedia('(prefers-color-scheme: dark)').matches;
+function updateThemeButton(){button.setAttribute('aria-label',isDark()?'Switch to light mode':'Switch to dark mode');button.innerHTML=isDark()?'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg>':'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M20.9 13.2A9 9 0 0 1 10.8 3.1 9 9 0 1 0 20.9 13.2Z"/></svg>';}
+button.addEventListener('click',()=>{root.dataset.theme=isDark()?'light':'dark';try{localStorage.setItem('portfolio-theme',root.dataset.theme);}catch(e){}updateThemeButton();});
+updateThemeButton();document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body></html>
